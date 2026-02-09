@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.05);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: #00eaff;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #00eaff;
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero h1 span {
+  color: #00eaff;
+}
+
+.hero h2 {
+  margin: 15px 0;
+  font-weight: 400;
+}
+
+.hero p {
+  max-width: 500px;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  padding: 12px 30px;
+  background: #00eaff;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: 600;
+}
+
+.btn.outline {
+  background: transparent;
+  border: 2px solid #00eaff;
+  color: #00eaff;
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 50% / 35%;
+  border: 6px solid #00eaff;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* Sections */
+.section {
+  padding: 90px 50px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* Glass Effect */
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  margin: 40px;
+}
+
+/* Skills */
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  padding: 20px 30px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 30px;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 260px;
+  padding: 25px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px;
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 260px;
+    height: 340px;
+  }
+}
